@@ -56,6 +56,7 @@ class Training extends \yii\db\ActiveRecord
     {
         return [
             [['training_title', 'training_desc', 'code'], 'required'],
+            [['training_title', 'training_desc', 'code'], 'required'],
             [['training_date'], 'safe'],
             [['code', 'created_at', 'updated_at'], 'string'],
             [['created_by', 'updated_by'], 'default', 'value' => null],
